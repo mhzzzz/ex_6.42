@@ -5,24 +5,23 @@ one of my exercises of C++,
 //.
 //.
 
-#include<iostream>
-#include<string>
+	#include<iostream>
+	#include<string>
 
-using std::string;
-using std::cout;
-using std::endl;
+	using std::string;
+	using std::cout;
+	using std::endl;
 
-string make_plural(size_t ctr, const string &word,
-						  		const string &ending = "s") 
-{
-	return (ctr>1) ? word+ending : word;						  			
-}
+	string make_plural(size_t ctr, const string &word,const string &ending = "s") 
+	{
+		return (ctr>1) ? word+ending : word;						  			
+	}
 
-int main()
-{
-	cout<<"单数："<<make_plural(1, "success")<<" "
+	int main()
+	{
+		cout<<"单数："<<make_plural(1, "success")<<" "
 					<<make_plural(1, "failure")<<endl;
-	cout<<"复数："<<make_plural(2, "successe")<<" "
+		cout<<"复数："<<make_plural(2, "successe")<<" "
 					<<make_plural(2, "failure")<<endl;
-	return 0;
-}
+		return 0;
+	}
